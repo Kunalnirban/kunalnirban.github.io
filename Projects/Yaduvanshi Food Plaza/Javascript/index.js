@@ -5,7 +5,7 @@ function submitForm() {
     var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
 
-    var url = "https://wa.me/917206686636?text="
+    var url = "https://wa.me/919845775520?text="
         + "Name : " + encodeURIComponent(name) + "%0a"
         + "Email : " + encodeURIComponent(email) + "%0a"
         + "Phone : " + encodeURIComponent(phone) + "%0a"
