@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To Data Structurs</title>
+
+    <meta name="keywords"
+        content="Data Structures,Algorithms,Python,Java,C,C++,JavaScript,Android Development,SQL,Data Science,Machine Learning,PHP,Web Development,System Design,Tutorial,Technical Blogs,Interview Experience,Interview Preparation,Programming,Competitive Programming,SDE Sheet,Job-a-thon,Coding Contests,GATE CSE,HTML,CSS,React,NodeJS,Placement,Aptitude,Quiz,Computer Science,Programming Examples,GeeksforGeeks Courses,Puzzles">
+    <link rel="pingback" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:locale" content="en_US">
+    <link rel="canonical" href="">
+    <meta property="og:type" content="article">
+
+
+    <meta property="og:title" content="Introduction to Data Structure and its applications - Kunal Yaduvanshi">
+    <meta property="og:description"
+        content="This Webpage includes details about Basic Data Structure">
+    <meta property="og:url" content="https://datastructure.pages.dev" />
+
+    <meta property="og:image" content="Media/Kunal Yaduvanshi-logos.jpg">
+    <meta property="og:image" content="Media/Kunal Yaduvanshi-logos300x200.jpg"> 
+   
+
+
+    <meta property="article:section" content="Data Structures">
+    <meta property="article:tag" content="Data Structures-Tree Traversals">
+    <meta property="article:tag" content="Data Structures-Stack">
+    <meta property="article:tag" content="Data Structures-Queue">
+    <meta property="article:tag" content="Data Structures-Misc">
+    <meta property="article:tag" content="Data Structures-Linked List">
+    <meta property="article:tag" content="Data Structures-Heap">
+    <meta property="article:tag" content="Data Structures-Hash">
+    <meta property="article:tag" content="Data Structures-Graph">
+    <meta property="article:tag" content="Data Structures-Binary Trees">
+    <meta property="article:tag" content="Data Structures-Balanced Binary Search Trees">
+    <meta property="article:tag" content="Data Structures-B and B+ Trees">
+    <meta property="article:tag" content="Data Structures-Array">
+    <meta property="article:tag" content="Data Structures - Applications">
+
+    <link rel="icon" type="image/x-icon" href="Media/Kunal Yaduvanshi-logos.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1070px)" href="CSS/Responsive.css">
+    <link rel="text/javascript" href="JavaScript/Script.js">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navigationtop">
+        <div class="navbar">
+            <div class="logo">
+                <a href=""><img src="Media/Kunal Yaduvanshi logo.png" alt="Kunal Yaduvanshi Logo"></a>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="loginbtn"><button onclick="alert('Login/Signup Unavailable')">Login/Signup</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h3>
+            Introduction to Data Structures
+        </h3>
+        <div>
+            <span class="head">Data Structures</span><span class="text"> <b>&#8211;</b> The logical or mathematical
+                model of a
+                particular organization of data is called <b>Data Structures.</b></span>
+        </div>
+        <br>
+        <div>
+            <span class="head">Data Types vs Data Structures</span>
+            &#8211;
+        </div>
+        <br><br>
+        <div class="table">
+            <table>
+
+                <tr class="tablehead">
+                    <th>Data Types</th>
+                    <th>Data Structures</th>
+                </tr>
+                <tr class="tabletext">
+                    <td>Data Type is the kind or form of a variable which is being used throughout the program. It
+                        defines
+                        that the particular variable will assign the values of the
+                        given data type only.
+                    </td>
+                    <td>Data Structure is the collection of different kinds of data. That entire data can be
+                        represented
+                        using an object and can be used throughout the entire
+                        program.
+                    </td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Implementation through Data Types is a form of abstract implementation.</td>
+                    <td>Implementation through Data Structures is called concrete implementation.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Can hold values and not data, so it is data less.</td>
+                    <td>Can hold different kind and types of data within one single object.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Values can directly be assigned to the data type variables.</td>
+                    <td>The data is assigned to the data structure object
+                        using some set of algorithms and operations like push, pop and so on.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>No problem of time complexity.</td>
+                    <td>Time complexity comes into play when working with data structures.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Examples: int, float, double etc.</td>
+                    <td>Examples: stacks, queues, tree etc.</td>
+                </tr>
+            </table>
+        </div>
+
+        <br><br>
+        <!-- End Content -->
+        <!-- Types of Data Structures -->
+        <div>
+
+            <span class="head">Types of Data Structure</span>
+            &#8211;
+            <ul style="list-style-type:square;">
+                <li>Primitive</li>
+                <li>Non-Primitive </li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="head">Primitive Data Structure</span>
+            <span class="text">
+                &#8211; Those basic data structures which are pre-defined in standard library. It can store the
+                value of
+                only one
+                data type. It cannot contain null values. ie &#8211; int, char, float etc.
+            </span>
+        </div>
+
+        <br>
+
+        <div>
+            <span class="head">Non-Primitive Data Structure</span>
+            <span class="text">&#8211; Those data structures which are user-defined (except strings) which can be easily
+                created
+                or
+                modified by
+                user. They can store multiple values and invoke methods to perform certain operations. ie &#8211;
+                string,
+                array
+                etc.
+            </span>
+        </div>
+
+        <br>
+        <div class="image-container">
+            <a>
+                <img id="ds-img" src="Media/Data structure types.png" alt="Data Structures Types Image"
+                    title="Click to enlarge">
+            </a>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <span class="head">Linear Data Structure</span>
+            <span class="text"> <b>&#8211;</b> In linear data structure data is organized in sequential order.</span>
+        </div>
+
+        <br>
+        <div>
+            <u><span> Types of linear Data Structure</span></u>
+            <b>&#8211;</b>
+        </div>
+        <div class="text">
+            <ul style="list-style-type: square;">
+                <li>Static</li>
+                <li>Dynamic</li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="head">Static Data Structure</span>
+            <span class="text">
+                &#8211; A static data structure is an organization or collection of data in memory which have a
+                fixed
+                size,
+                that is, it can store a limited amount of elements or data in it. ie &#8211; array, string.
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <span class="head">Dynamic Data Structure</span>
+            <span class="text">
+                &#8211; A dynamic data structure is an organization or collection of data in memory which do not
+                have a
+                fixed size, that is, its size can be modified during the operations performed on it and can store a
+                variable
+                amount of elements or data in it. ie &#8211; linked list, queue, stack etc.
+            </span>
+        </div>
+        <br>
+
+        <div>
+            <u><span>Types of Dynamic Data Structure</span></u> <b>&#8211;</b>
+            <ul>
+                <li>Linked list</li>
+                <li>Stack</li>
+                <li>Queue</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div>
+            <span class="head">Non-linear Data Structure</span>
+            <span>&#8211; In non-linear data structure data is organized in random order.</span>
+        </div>
+
+        <br>
+
+        <div>
+            <u>Types of non-linear data structures</u>
+
+            <ul>
+                <li>Trees</li>
+                <li>Graphs</li>
+                <li>Heaps</li>
+                <li>Tries</li>
+                <li>Maps</li>
+                <li>Dictionaries</li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="head">
+                Difference between linear and non-linear data structure</span>
+            <span>
+                &#8211;
+            </span>
+        </div>
+        <br>
+        <div class="table">
+            <table>
+
+                <tr class="tablehead">
+                    <th>Linear Data Structure</th>
+                    <th>Non-Linear Data Structure</th>
+                </tr>
+                <tr class="tabletext">
+                    <td>In a linear data structure, data elements are arranged in a linear order
+                        where each and
+                        every element is attached to its previous and next adjacent.
+                    </td>
+                    <td>In a non-linear data structure, data elements are attached in hierarchically manner.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>In linear data structure, single level is involved.</td>
+                    <td>Whereas in non-linear data structure, multiple levels are involved.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Its implementation is easy in comparison to non- linear data structure.</td>
+                    <td>While its implementation is complex in comparison to linear data structure.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>In linear data structure, data elements can be traversed in a single run only.</td>
+                    <td>While in non-linear data structure, data elements can't be traversed in a single run only.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>In a linear data structure, memory is not utilized in an efficient way.</td>
+                    <td>While in a non-linear data structure, memory is utilized in an efficient way.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>Applications of linear data structures are mainly in application software development.</td>
+                    <td>Applications of non-linear data structures are in Artificial Intelligence and image
+                        processing.</td>
+                </tr>
+                <tr class="tabletext">
+                    <td>ie &#8211; array, stack, queue, linked list, etc.</td>
+                    <td>ie &#8211; trees, graphs, heaps, dictionaries, tries, maps
+                        etc.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+
+    <br>
+    <section>
+        <!-- Applications -->
+        <span class="head">Application of Data Structures</span> &#8211;
+        <br><br>
+        <div>
+            <u><b>Arrays</b></u> &#8211;
+            <ul class="text">
+                <li>Used for storing fixed number of items that need fast access time at any point during
+                    program execution.</li>
+                <li>Storing list of data elements belonging to same data type.</li>
+                <li>Auxiliary storage for other data structures.</li>
+                <li>Storage of binary tree elements of fixed count.</li>
+                <li>Storage of matrices.</li>
+                <li>Arrangement of the leader-board of a game can be done simply through arrays
+                    to
+                    store
+                    the score and arrange them in descending order to clearly make out the rank of each
+                    player
+                    in the game.</li>
+                <li>A simple question Paper is an array of numbered questions with each of them
+                    assigned
+                    some marks.</li>
+                <li>2D arrays, commonly known as, matrices, are used in image processing.</li>
+                <li>It is also used in speech processing, in which each speech signal is an
+                    array.
+                </li>
+                <li>Your viewing screen is also a multidimensional array of pixels.</li>
+                <li>Book titles in a Library Management Systems.</li>
+                <li>Online ticket booking.</li>
+                <li>Contacts on a cell phone.</li>
+                <li>For CPU scheduling in computer.</li>
+                <li>To store the possible moves of chess on a chessboard.</li>
+                <li>To store images of a specific size on an android or laptop.</li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <u><b>Strings</b></u> &#8211;
+            <ul class="text">
+                <li>Spam email detection.</li>
+                <li>Plagiarism detection.</li>
+                <li>Search engine.</li>
+                <li>Digital forensic and information retrieval system.</li>
+                <li>Spell checkers.</li>
+                <li>In the database to check valid information of the user.</li>
+            </ul>
+        </div>
+
+
+        <br>
+        <div>
+            <u><b>Linked list</b></u> &#8211;
+            <ul class="text">
+                <li>Implementing stacks, queues, binary trees and graphs of predefined size.
+                </li>
+                <li>Implement dynamic memory management functions of the operating system.</li>
+                <li>Polynomial implementation for mathematical operations</li>
+                <li>Circular linked list is used to implement OS or application functions that
+                    require
+                    round robin execution of task</li>
+                <li>Images are linked with each other. So, image viewer software uses a linked
+                    list
+                    to
+                    view the previous and the next images using the previous and next buttons.</li>
+                <li>Web pages can be accessed using the previous and the next URL links which
+                    are
+                    linked
+                    using a linked list.</li>
+                <li>The music players also use the same technique to switch between music.</li>
+                <li>To keep the track of turns in a multiplayer game, a circular linked list is
+                    used.
+                </li>
+                <li>MS-Paint drawings and shapes are connected via a linked list on canvas.</li>
+                <li>Escalators — Circular linked List.</li>
+                <li>Each of the lines of code in an IDE internally is a record on a
+                    doubly-linked
+                    list.
+                </li>
+                <li>Left/Right swipe on Tinder uses a doubly-linked list.</li>
+                <li>Social media content "feeds".</li>
+                <li>Used for symbol table management in a designing compiler.</li>
+                <li>Used in switching between applications and programs (Alt + Tab) in the
+                    Operating
+                    system (implemented using Circular Linked List).</li>
+                <li>Train coaches are connected to one another in a doubly-linked list fashion.
+                </li>
+                <li>It can be used to implement Stacks, Queues, Graphs, and Trees.</li>
+                <li>To perform an undo operation.</li>
+                <li>Back button.[LIFO]</li>
+                <li>Syntax in the coding editor.</li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <u><b>Stack</b></u> &#8211;
+            <ul class="text">
+                <li>Temporary storage structure for recursive operations.</li>
+                <li>Auxiliary storage structure for nested operations, function calls,
+                    deferred/postponed functions. </li>
+                <li>Manage function calls.</li>
+                <li>Evaluation of arithmetic expressions in various programming languages.</li>
+                <li>Conversion of infix expressions into postfix expressions (polish notation).
+                </li>
+                <li>Checking syntax of expressions in a programming environment.</li>
+                <li>Matching of parentheses.</li>
+                <li>String reversal.</li>
+                <li>In all the problems solutions are based on backtracking.</li>
+                <li>Used in depth first search in graph and tree traversal.</li>
+                <li>Operating System function.s</li>
+                <li>UNDO and REDO functions in an editor.</li>
+            </ul>
+        </div>
+
+
+        <br>
+        <div>
+            <u><b>Queue</b></u> &#8211;
+            <ul class="text">
+                <li>It is used in breadth search operations in graphs.</li>
+                <li>Job scheduler operations of OS like a print buffer queue, keyboard buffer
+                    queue
+                    to
+                    store the keys pressed by users.</li>
+                <li>Job scheduling, CPU scheduling, Disk Scheduling.</li>
+                <li>Priority queues are used in file downloading operations in a browser.</li>
+                <li>Data transfer between peripheral devices and CPU.</li>
+                <li>Interrupts generated by the user applications for CPU.</li>
+                <li>Calls handled by the customers in BPO.</li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <u><b>Trees</b></u> &#8211;
+            <ul class="text">
+                <li>Implementing the hierarchical structures in computer systems like directory
+                    and
+                    file
+                    system.</li>
+                <li>Implementing the navigation structure of a website.</li>
+                <li>Code generation like Huffman's code.</li>
+                <li>Decision making in gaming applications.</li>
+                <li>Implementation of priority queues for priority based OS scheduling
+                    functions.
+                </li>
+                <li>Parsing of expressions and statements in programming language compilers.
+                </li>
+                <li>For storing data keys for DBMS for indexing.</li>
+                <li>Spanning trees for routing decisions in computer and communications
+                    networks.
+                </li>
+                <li>Hash trees.</li>
+                <li>path-finding algorithm to implement in AI, robotics and video games
+                    applications.
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <u><b>Graphs</b></u> &#8211;
+            <ul class="text">
+                <li>Representing networks and routes in communication, transportation and travel
+                    applications.</li>
+                <li>Routes in GPS.</li>
+                <li>Interconnections in social networks and other network based applications.
+                </li>
+                <li>Mapping applications.</li>
+                <li>Ecommerce applications to present user preferences.</li>
+                <li>Utility networks to identify the problems posed to municipal or local
+                    corporations.
+                </li>
+                <li>Resource utilization and availability in an organization.</li>
+                <li>Document link map of a website to display connectivity between pages through
+                    hyperlinks.</li>
+                <li>Robotic motion and neural networks.</li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <u><b>Matrix</b></u> &#8211;
+            <ul class="text">
+                <li>In geology, matrices are used for making seismic surveys.</li>
+                <li>Used for plotting graphs, and statistics and also to do scientific studies
+                    and
+                    research in almost different fields.</li>
+                <li>Matrices are also used in representing real-world data like the population
+                    of
+                    people, infant mortality rate, etc.</li>
+                <li>They are the best representation methods for plotting surveys. </li>
+                <li>For refraction and reflection in science optics.</li>
+                <li>Electronic circuits and quantum physics.</li>
+                <li>Media player.</li>
+                <li>Mailing list.</li>
+                <li>Symbol table creation.</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="sticky_button">
+        <p>
+            &nbsp; &nbsp; <a id="link" href="Media/Indroduction to DSA.pdf"
+                target="_blank"><span class="text_border">Download
+                    This
+                    article Now</span></a>
+            &nbsp; &nbsp;
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        © 2021 All rights reserved by <a href="https://kunalyadav.pages.dev" target="_blank">Kunal
+            Yaduvanshi</a>
+    </footer>
+</body>
+
+</html>

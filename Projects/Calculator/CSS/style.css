@@ -1,0 +1,141 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+.navbar{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+#external{
+    position: absolute;
+    overflow: auto;
+    justify-self: flex-end;
+    justify-items: end;
+    display: block;
+
+    top: 20px;
+    right: 20%;
+    z-index: +1 !important ;
+    position: fixed;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#external a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#external:hover, #external:focus{
+    transition: .5s ease;
+    transform: scale(.96)!important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#external a:hover, #external a:focus{
+    transition: .5s ease;
+    color: blue;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    height: auto !important;
+    min-height: 35vh !important;
+    max-width: 98vw;
+    overflow-x: auto;
+    border:none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+tr {
+    text-align: center;
+}
+
+td input[type="text"] {
+    width: 99%;
+    height: 40px;
+    outline: none;
+    background-color: rgba(168, 98, 233, 0.247);
+    border-radius: 5px;
+    border: 0.5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5px;
+    text-align: right;
+    padding: 5px;
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+td input::placeholder {
+    text-align: right;
+    padding: 5px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+td input[type="text"]:focus {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: rgba(190, 164, 214, 0.116);
+    text-align: right;
+    padding: 5px;
+}
+
+td input[type="button"] {
+    padding: 5px;
+    margin: 5px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+td input[type="button"]:focus {
+    transition: .5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: rgb(253, 244, 209);
+    background-color: rgb(140, 73, 202);
+}
+
+footer{
+    margin: 20px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: blueviolet;
+    transition: .4s ease;
+}
+

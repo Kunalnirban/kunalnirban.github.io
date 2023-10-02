@@ -1,0 +1,902 @@
+.navlinks {
+    display: none;
+
+}
+
+.social {
+    display: none;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.menu {
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: black;
+    width: 150px;
+    color: #f2f2f2;
+    font-size: large;
+    display: block !important;
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    box-shadow: 4px 4px 0 rgb(129, 88, 167);
+
+}
+
+.menu:active,
+.menu:hover {
+    height: fit-content;
+    opacity: .8;
+    cursor: pointer;
+    z-index: 11111;
+    display: block;
+    visibility: visible !important;
+    transition: all ease-in-out .3s;
+}
+
+.dropdown:active .dropdown-content,
+.dropdown:hover .dropdown-content {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding-right: 1em;
+    z-index: 1111;
+    display: block;
+    overflow: visible;
+    text-align: left !important;
+    left: -40%;
+    padding-top: 5px;
+    margin: 15px;
+    margin-top: 450px;
+    margin-left: 0px;
+    transition: all ease-in-out .3s;
+}
+
+.dropdown-content ul li a {
+    color: black;
+
+}
+
+
+.dropdown-social ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dropdown-content ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.dropdown-content ul li a {
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dropdown-social p {
+    color: black;
+    font-size: .9rem;
+    cursor: none;
+    text-align: center;
+}
+
+.dropdown-social p a {
+    text-decoration: none;
+
+}
+
+.menu-items:hover {
+    background-color: blueviolet;
+    color: #f2f2f2;
+    width: 100%;
+    border-radius: 5px;
+    height: 15px;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .menu {
+
+        width: 120px;
+    }
+
+    .logo a img {
+        width: 300px;
+    }
+
+    .maintext {
+        font-size: 2rem;
+    }
+
+    .dynamic-text-container {
+        font-size: 1.7rem;
+    }
+
+    .fixed-dynamic-text,
+    .dynamic-text {
+        font-size: 2.1rem;
+    }
+
+    .arrow {
+        margin-top: 30px;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutimage img {
+        margin: 20px;
+        margin-top: 35px;
+        height: 350px;
+    }
+
+    .aboutheadmain h1 {
+        font-size: 1.3rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        margin: 20px;
+    }
+
+    .skills-head {
+        margin: 20px;
+    }
+
+    .skillheading {
+        margin-top: 0px;
+    }
+
+    .skillheading>h1 {
+        font-size: 0.9rem;
+
+    }
+
+    .skillheading p {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .skills-head u {
+        font-size: 1.2rem;
+    }
+
+    .progress,
+    .progressbar-html,
+    .progressbar-css,
+    .progressbar-javascript,
+    .progressbar-wordpress {
+        margin-top: 0px;
+        height: 10px;
+    }
+
+    #projects {
+        margin: 2rem 2rem;
+    }
+
+    .card a,
+    .title {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        padding: .7rem !important;
+    }
+
+    .nav-link h2,
+    .nav-address h2 {
+        font-size: 1.35rem;
+    }
+
+    .address-area,
+    .address-area a,
+    .nav-link ul li a,
+    .nav-link ul li {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 550px) {
+
+    /* header section*/
+    .menu {
+
+        width: 120px;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:active .dropdown-content {
+        background-color: #f2f2f2;
+        border-radius: .5rem;
+        padding-right: 1em;
+        z-index: 1111;
+        display: block;
+        overflow: visible;
+        text-align: left !important;
+        left: -40%;
+        padding-top: 5px;
+        margin: 15px;
+        margin-top: 450px;
+        margin-left: -130px;
+        transition: all ease-in-out 2s;
+    }
+
+
+    .logo a img {
+        width: 300px;
+    }
+
+    .maintext {
+        font-size: 2rem;
+    }
+
+    .dynamic-text-container {
+        font-size: 1.5rem;
+    }
+
+    .fixed-dynamic-text,
+    .dynamic-text {
+        font-size: 1.8rem;
+    }
+
+    .arrow {
+        margin-top: 30px;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutimage {
+        display: block;
+        margin: auto;
+    }
+
+    .aboutimage img {
+        height: 60vh;
+        align-self: center;
+        margin: auto;
+    }
+
+    .aboutheadmain {
+        width: 100%;
+    }
+
+    .aboutheadmain h1 {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+        margin: 20px;
+    }
+
+    .projectlink {
+        display: none;
+    }
+
+    /* Mobile-Projects */
+    .project-mobile {
+        display: flex;
+
+    }
+
+    .skills-head {
+        margin: auto;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .skillheading {
+        margin-top: 0px;
+    }
+
+    .skillheading>h1 {
+        font-size: 0.9rem;
+
+    }
+
+    .skillheading p {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .skills-head u {
+        font-size: 1rem;
+    }
+
+    #projects {
+        margin: 2rem 2rem;
+    }
+
+    .project-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card a,
+    .title {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        padding: .5rem !important;
+        width: 100%;
+    }
+
+    .nav-link h2 {
+        margin-top: 10px !important;
+        margin-left: 20px;
+    }
+
+    .nav-link ul li a {
+        padding: 5px;
+        text-align: left;
+        padding-left: -10px;
+        margin-left: 0px;
+    }
+
+    .nav-link h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 0px;
+
+    }
+
+    .nav-address h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .nav-address {
+        padding: 5px;
+        margin: 0px;
+
+    }
+
+    .address-area {
+        padding: 5px;
+        margin-right: -60px;
+    }
+
+    .address-area,
+    .address-area a,
+    .nav-link ul li a,
+    .nav-link ul li {
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        padding: 5px 5px;
+        margin-left: 0px;
+        font-size: 0.8rem;
+    }
+
+    .head-social {
+        font-size: 0.8rem;
+    }
+
+    .social-media {
+        gap: 0.5em;
+        padding: 5px 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .social-icon a img {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+/* 550-436px */
+
+@media (max-width: 550px) and (min-width: 436px) {
+
+    /* header section*/
+    .menu {
+        width: 120px;
+        font-size: small;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:active .dropdown-content {
+        background-color: #f2f2f2;
+        border-radius: .5rem;
+        padding-right: 1em;
+        z-index: 1111;
+        display: block;
+        overflow: visible;
+        text-align: left !important;
+        left: -40%;
+        padding-top: 5px;
+        margin: 15px;
+        margin-top: 450px;
+        margin-left: -130px;
+        transition: all ease-in-out 2s;
+    }
+
+
+    .logo a img {
+        width: 220px;
+    }
+
+    .maintext {
+        font-size: 1.5rem;
+    }
+
+    .dynamic-text-container {
+        font-size: 1.2rem;
+    }
+
+    .fixed-dynamic-text,
+    .dynamic-text {
+        font-size: 1.2rem;
+    }
+
+    .arrow {
+        margin-top: 20px;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutimage {
+        display: block;
+        margin: auto;
+    }
+
+    .aboutimage img {
+        height: 60vh;
+        align-self: center;
+        margin: auto;
+    }
+
+    .aboutheadmain {
+        width: 100%;
+    }
+
+    .aboutheadmain h1 {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+        margin: 20px;
+    }
+
+    .projectlink {
+        display: none;
+    }
+
+    /* Mobile-Projects */
+    .project-mobile {
+        display: block;
+    }
+
+    #project-info {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .skills-head {
+        margin: auto;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .skillheading {
+        margin-top: 0px;
+    }
+
+    .skillheading>h1 {
+        font-size: 0.9rem;
+
+    }
+
+    .skillheading p {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .skills-head u {
+        font-size: 1rem;
+    }
+
+    #projects {
+        margin: 2rem 2rem;
+    }
+
+    .project-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card a,
+    .title {
+        font-size: 1rem;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navbox {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-link {
+        padding: .5rem !important;
+        width: 100%;
+    }
+
+    .nav-link h2 {
+        margin-top: 10px !important;
+        margin-left: 20px;
+    }
+
+    .nav-link ul li a {
+        padding: 5px;
+        text-align: left;
+        padding-left: -10px;
+        margin-left: 0px;
+    }
+
+    .nav-link h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 0px;
+
+    }
+
+    .nav-address h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .nav-address {
+        padding: 5px;
+        margin: 0px;
+
+    }
+
+    .address-area {
+        padding: 5px;
+        margin-right: -60px;
+    }
+
+    .address-area,
+    .address-area a,
+    .nav-link ul li a,
+    .nav-link ul li {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .copyright {
+        padding: 5px 5px;
+        margin-left: 0px;
+        font-size: 0.8rem;
+    }
+
+    .head-social {
+        font-size: 0.8rem;
+    }
+
+    .social-grp {
+        justify-content: center;
+    }
+
+    .social-media {
+        gap: 0.5em;
+        padding: 5px 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .social-icon a img {
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+/* 436 - 00 */
+
+@media (max-width: 436px) {
+
+    /* header section*/
+    * {
+        box-sizing: border-box;
+        /* overflow: hidden; */
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .menu {
+        width: 80px;
+        font-size: small;
+        margin-right: 5px;
+        padding: 5px;
+        right: 5px;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:active .dropdown-content {
+        background-color: #f2f2f2;
+        border-radius: .5rem;
+        padding-right: 0.5em;
+        z-index: 1111;
+        display: block;
+        overflow: visible;
+        text-align: left !important;
+        padding-top: 5px;
+        margin: 0px;
+        margin-top: 360px;
+        margin-left: -200px;
+        margin-right: 10px;
+        transition: all ease-in-out 2s;
+    }
+
+    .dropdown-content ul li {
+        list-style: none;
+        padding: 8px;
+    }
+
+    .menu-items:hover {
+        padding: 8px;
+        padding-left: 10px;
+        padding-right: 150px;
+    }
+
+    .logo a img {
+
+        width: 150px;
+    }
+
+    .maintext {
+        font-size: 1.3rem;
+    }
+
+    .dynamic-text-container {
+        font-size: 1rem;
+    }
+
+    .fixed-dynamic-text,
+    .dynamic-text {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        margin-top: 20px;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutimage {
+        display: block;
+        margin: auto;
+    }
+
+    .aboutimage img {
+        height: 30vh;
+        align-self: center;
+        margin: auto;
+        border: 5px solid gray;
+    }
+
+    .aboutheadmain {
+        width: 100%;
+    }
+
+    .aboutheadmain h1 {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 0.8rem;
+        margin: 20px;
+    }
+
+    .projectlink {
+        display: none;
+    }
+
+    /* Mobile-Projects */
+    .project-mobile {
+        display: block;
+    }
+
+    #project-info {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .skills-head {
+        margin: auto;
+        margin: 20px;
+        width: 100%;
+    }
+
+    .skillheading {
+        margin-top: 0px;
+    }
+
+    .skillheading>h1 {
+        font-size: 0.9rem;
+
+    }
+
+    .skillheading p {
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .skills-head u {
+        font-size: 1rem;
+    }
+
+    #projects {
+        margin: 2rem 2rem;
+    }
+
+    .project-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card a,
+    .title {
+        font-size: 1rem;
+    }
+
+
+    /* form */
+    .form-control input,
+    textarea{
+        width: 85vw;
+    }
+
+    .button {
+        width: 85vw;
+    }
+
+    .form-btn{
+        margin-top: 0px;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navbox {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-link {
+        padding: .5rem !important;
+        width: 100%;
+    }
+
+    .nav-link h2 {
+        margin-top: 10px !important;
+        margin-left: 20px;
+    }
+
+    .nav-link ul li a {
+        padding: 5px;
+        text-align: left;
+        padding-left: -10px;
+        margin-left: 0px;
+    }
+
+    .nav-link h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 0px;
+
+    }
+
+    .nav-address h2 {
+        padding-top: 0px;
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .nav-address {
+        padding: 5px;
+        margin: 0px;
+
+    }
+
+    .address-area {
+        padding: 5px;
+        margin-right: -60px;
+    }
+
+    .address-area,
+    .address-area a,
+    .nav-link ul li a,
+    .nav-link ul li {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .copyright {
+        padding: 5px 5px;
+        margin-left: 0px;
+        font-size: 0.8rem;
+    }
+
+    .head-social {
+        font-size: 0.8rem;
+    }
+
+    .social-grp {
+        justify-content: center;
+    }
+
+    .social-media {
+        gap: 0.5em;
+        padding: 5px 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .social-icon a img {
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+/* global */

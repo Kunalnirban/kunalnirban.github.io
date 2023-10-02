@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Kunal Yadav</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.min.js"></script>
+    <script src="Javascript/index.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="shortcut icon" href="Media/Favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="Media/Favicon.ico">
+    <meta property="og:title" content="Calculator - Kunal Yaduvanshi">
+    <meta property="og:description"
+        content="This is basic calculator made by Kunal Yadav">
+    <meta property="og:url" content="https://kunalyadav.pages.dev" />
+
+    <meta property="og:image" content="https://kunalyadav.pages.dev/Media/Kunal%20Yadav.png">
+    <meta name="keywords" content="">
+
+    <meta name="keywords" content="kunal yadav, kunal yadav, kunal, kunal nirban, kunal yaduvanshi, kunal rao, kunal, kunal nirban, kunal yaduvanshi, kunal yadav, kunal, kunal nirban, kunal yaduvanshi, kunal rao,  kunal rao, Kunal Yadav, Yadav, Kunal, kunal yadav, kunal, kunal nirban, kunal yaduvanshi, kunal rao, kunal yadav, kunal, kunal nirban, kunal yaduvanshi, kunal rao, kunal yadav, kunal, kunal nirban, kunal yaduvanshi, kunal rao">
+
+    <meta name="author" content="Kunal Yadav">
+    <meta name="robots" content="index, follow">
+
+    <meta property="article:section" content="Kunal">
+    <meta property="article:tag" content="kunal">
+    <meta property="article:tag" content="Kunal Yadav">
+    <meta property="article:tag" content="Kunal Nirban">
+    <meta property="article:tag" content="Kunal Yaduvanshi">
+    <meta property="article:tag" content="Kunal yadav">
+    <meta property="article:tag" content="kunal yadav">
+    <meta property="article:tag" content="Kunal nirban">
+    <meta property="article:tag" content="Kunal rao">
+    <meta property="article:tag" content="kunal bawania">
+    <meta property="article:tag" content="kunal Bawania">
+    <meta property="article:tag" content="kunal yaduvanshi">
+    <meta property="article:tag" content="Kunal Mahendergarh">
+    <meta property="article:tag" content="Kunal Haryana">
+    <meta property="article:tag" content="KunalHaryana">
+    <meta property="article:tag" content="KunalBawania">
+    <meta property="article:tag" content="Kunalnirban">
+    <meta property="article:tag" content="Kunalyadav">
+    <meta property="article:tag" content="Kunalrao">
+    <meta property="article:tag" content="Kunalyaduvanshi">
+
+</head>
+
+<body>
+
+
+    <table id="calculator">
+        <tr>
+            <td colspan="4"><input type="text" rows="3" placeholder="Enter a Number" id="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC" onclick="clr()" /></td>
+            <td><input type="button" value="Sq" onclick="calculateSquare()"></td>
+            <td><input type="button" value="√" onclick="calculateSquareRoot()"></td>
+            <td><input type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="00" onclick="dis('00')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)" /></td>
+            <td><input type="button" value="=" onclick="solve()" /></td>
+            <td><input type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)" /></td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>

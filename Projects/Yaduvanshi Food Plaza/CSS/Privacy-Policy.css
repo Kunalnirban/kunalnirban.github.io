@@ -1,0 +1,237 @@
+/* Global Styles */
+
+* {
+    margin: 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+/* Header */
+
+#navbar ::before {
+    content: "";
+    background-color: #f7bf4f;
+    position: sticky;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    justify-content: space-between;
+    background-color: #f7bf4f;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/*Navigation: logo and Image */
+#logo {
+    margin: 15px 36px;
+    height: 64px;
+    width: 200px;
+}
+
+#logo img {
+    height: 64px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Navigation: List item (Menu) */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 10px;
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 15px;
+    color: #271801;
+
+}
+
+#navbar ul li a:hover {
+    display: block;
+    color: #f3f3f3;
+    border-radius: 15px;
+    background-color: #271801c1;
+    padding: 3px 22px;
+    transition: 1s ease-in-out;
+    box-shadow: #f7bf4f 3px 3px;
+
+}
+
+/* Phone Navbar */
+
+
+@media (max-width: 1000px){
+  #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      top: 0px;
+      position: sticky;
+      justify-content: space-between;
+      background-color: #f7bf4f;
+      z-index: 1;
+      width: 100%;
+  }
+
+  #navbar ul li {
+    list-style: none;
+    margin: 7px;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+#logo {
+    margin: 5px 16px;
+    height: 50px;
+    width: 170px;
+}
+
+#logo img {
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 810px){
+  #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      top: 0px;
+      position: sticky;
+      justify-content: space-between;
+      background-color: #f7bf4f;
+      z-index: 1;
+      width: 100%;
+  }
+
+  #navbar ul li {
+    list-style: none;
+    margin: 10px;
+    font-weight: 500;
+
+}
+
+#navbar ul li a {
+    padding: 0px 7px;
+    font-size: 0.9rem;
+}
+
+#logo {
+    height: 40px;
+    width: 130px;
+    align-self: center;
+}
+
+#logo img {
+    align-self: center;
+    height: 40x;
+    width: 130px;
+    cursor: pointer;
+}
+}
+
+.body{
+  margin: 30PX;
+}
+
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Contact Section */
+  h3 {
+    margin-top: 30px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 0px) {
+    body {
+      font-size: 16px;
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  
+    footer {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  

@@ -1,0 +1,250 @@
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: rgb(225, 207, 184);
+    font-family: verdana;
+    font-size: 1.4rem;
+    width: 100% !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navigation Bar */
+
+#navigationtop{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(235, 223, 208);
+
+}
+
+.navbar {
+    background-color: rgb(235, 223, 208);
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-areas:
+    'nav nav nav';
+    grid-gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.navbar ::before {
+    content: "";
+    position: sticky;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav';
+    top: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+
+.logo a img {
+    position: sticky;
+    display: block;
+    padding-left: 10px;
+    padding-top: 8px;
+    width: 400px;
+    align-content: center;
+}
+
+
+
+.navlinks ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Freehand';
+
+}
+
+.navlinks ul li {
+    display: block;
+    list-style: none;
+    margin: auto;
+
+}
+
+.navlinks li a {
+    color: #3d5a80;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.navlinks li a:hover {
+    color: #2205fd;
+    transition: 0.8s ease;
+    cursor: pointer;
+
+}
+
+#loginbtn {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+#loginbtn button {
+    margin: auto;
+    background-color: rgb(124, 30, 213);
+    border: none;
+    border-radius: 20px;
+    padding: .8em 1.5em .8em 1.5em !important;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .12em;
+    font-size: 0.9rem;
+
+}
+
+#loginbtn button:hover {
+    background-color: rgb(139, 65, 207);
+    cursor: pointer;
+    box-shadow: 3px 3px rgb(255, 174, 0);
+    transition: 0.8s ease;
+}
+
+/* Body */
+
+section>h3 {
+    background-color: #efa803;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.head {
+    color: rgb(0, 4, 224);
+    font-size: 1.6rem;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 545;
+}
+
+.text {
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tables */
+
+
+.table {
+    display: table;
+    margin: auto;
+    width: 90%;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.tablehead th {
+
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.tabletext td {
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.tabletext td,
+.tablehead th {
+    border: 1px solid blue;
+    width: 49%;
+}
+
+.tabletext:nth-child(even) {
+    background-color: #f2f2f246;
+}
+
+.table th {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+/*  */
+#ds-img {
+    border: 1px solid rgb(145, 142, 215);
+    display: block;
+    padding: 15px 15px;
+    margin: auto;
+    width: 60%;
+   
+    align-items: center;
+    border-radius: 2%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: zoom-in;
+    transition: width 0.8s ease;
+}
+
+#ds-img:onclick{
+    position: fixed!important;
+}
+
+/* Sticky Button */
+.sticky_button {
+    display: block;
+    float: right;
+    margin-right: -80px;
+    position: sticky;
+    bottom: 50%;
+    transform: rotateZ(270deg) translateX(-13%);
+    background-color: rgba(0, 47, 236, 0.594);
+    border-radius: 15px;
+    font-size: small;
+}
+
+.sticky_button p a {
+    color:white;
+    padding: 0px 0px;
+    text-decoration: none;
+
+}
+.sticky_button:hover{
+    background-color: #2205fd;
+    transition: 1s ease-out;
+}
+
+footer{
+    /* width: 99.1%; */
+    text-align: center;
+    background-color: #efa803;
+    padding: 5px;
+    margin-bottom: -5px;
+   
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+
+section {
+    margin: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}

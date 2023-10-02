@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaduvanshi Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="CSS/Media/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Welcome to Yaduvanshi Fitness - Kunal Yaduvanshi">
+    <meta property="og:description"
+        content="Yaduvanshi Fitness - Improves Your muscles and Health || We are the best in Yoour area">
+    <meta property="og:url" content="https://yaduvanshifitness.pages.dev" />
+</head>
+
+<body>
+    <header class="CSS">
+        <!-- Left box for logo -->
+        <div class="left">
+            <a href="#">
+                <img class="logo" src="CSS/Media/logo.png" alt="Website logo">
+            </a>
+            <div>
+                <a href="#" style="text-decoration: none;">Yaduvanshi Fitness</a>
+            </div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn" onclick="alert('Calling Yaduvanshi Fitness')"><a href="tel:+917206686636">Call
+                    Us</a></button>
+            <button class="btn" onclick="alert('Continue to Mail to Yaduvanshi Fitness')"><a
+                    href="mailto:kunalyaduvanshi@icloud.com">Email Us</a></button>
+
+        </div>
+    </header>
+    <!---Main Section-->
+    <section id="main_sec">
+        <h1 align='center'>Welcome To Our Yaduvanshi Fitness!</h1>
+    </section>
+
+    <section id="form">
+        <div class="container">
+
+            <form action="#noaction.php">
+                <h1>Join The Fitness Revolution With Yaduvanshi Fitness</h1>
+                <div class="form-group">
+                    Full Name: <input type="text" name=""  placeholder="Enter Your name" required>
+                </div>
+
+                <div class="form-group">
+                    Father Name: <input type="text" name="" placeholder="Enter Your name" required>
+                </div>
+
+                <div class="form-group">
+                    Email: <input type="email" name="" placeholder="Enter Your Email id" required>
+                </div>
+
+                <div class="form-group">
+                    Phone Number: <input type="tel" name="" placeholder="Enter Your Phone Number" maxlength="10" minlength="10" pattern="[7-9]{1}[0-9]{9}" required>
+                </div>
+                <div class="form-group">
+                    Date of Birth: <input type="date" name="" placeholder="Enter Your Date of birth" min="1960-01-01"
+                        max="2008-01-01" required>
+                </div>
+
+                <div class="form-group">
+                    Gender: <select name="Gender" required>
+                        <option value="">
+                            <Select:disabled>Select</Select:disabled>
+                        </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="shift-select">
+                    Which Shift Do you prefer :
+                    <div class="radio">
+                        <input type="radio" name="shift" required="required" >
+                        <label for="Morning">Morning</label>
+                        <br>
+                        
+                        <input type="radio" name="shift" required="required" >
+                        <label for="Afternoon">Afternoon</label>
+                        <br>
+                        
+                        <input type="radio" name="shift" required="required" >
+                        <label for="Evening">Evening</label>
+                        <br>
+                        
+                        <input type="radio" name="shift" required="required" >
+                        <label for="Night">Night</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    State:
+                    <!--- India states -->
+                    <select id="country-state" name="country-state" required>
+                        <option value="">Select state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Pincode: 
+                        <input type="text" placeholder="Enter Pincode" required pattern="^[0-9]{6}$"
+                            title="Enter Valid Pin Code" maxlength="6" minlength="6"></label>
+                </div>
+
+                <div class="form-group">
+                    Address: <textarea name="" id="" rows="3" placeholder="Enter Address" required></textarea>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn" type="reset">Reset</button>
+
+            </form>
+
+        </div>
+    </section>
+    
+    <div>
+
+        <section id="gallery">
+            <!-- Gallery Section -->
+            <div class="maingallery">
+                <div class="galleryhead">
+
+                    Image Gallery
+                </div>
+                <img src="CSS/Media/image 1.jpg" alt="Image 1" class="image">
+                <img src="CSS/Media/image 2.jpg" alt="Image 2" class="image">
+                <img src="CSS/Media/image 3.jpg" alt="Image 2" class="image">
+            </div>
+        </section>
+    </div>
+    <div>
+
+        <div class="desktop">
+            This Website is only viewable on desktop [Minimum Width - 1240px]
+        </div>
+
+        <footer class="footer">&copy; 2023 - All Rights Reserved by Kunal Yadav</footer>
+    </div>
+    <div>
+        <br>
+        <br><br>
+    </div>
+
+
+</body>
+
+</html>
