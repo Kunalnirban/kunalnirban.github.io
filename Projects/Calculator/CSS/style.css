@@ -98,6 +98,23 @@ nav {
     text-underline-offset: 0.3rem;
 }
 
+
+.menu-items-desktop a {
+    color: white;
+}
+
+.menu-items-desktop>ul .active a {
+    color: rgb(190, 183, 183);
+}
+
+.menu-items-desktop>ul .active a:hover {
+    color: rgb(255, 245, 245);
+}
+
+.menu-items-desktop> ul .dropdown-menu a{
+    color: #000000;
+}
+
 nav>hr {
     color: rgb(181, 185, 188);
 }
