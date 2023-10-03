@@ -381,16 +381,13 @@ textarea:-ms-input-placeholder {
 }
 
 nav .navbar-brand{
-    font-weight: bolder;
-    z-index: +3;
-    
+    font-weight: bolder;    
 }
 
 #navbar-example2 {
     background-color: #0000ff6e;
     position: sticky;
     top: 0px;
-    z-index: +4;
     overflow: hidden;
 }
 
