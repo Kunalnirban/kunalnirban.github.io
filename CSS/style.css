@@ -497,13 +497,13 @@ nav .navbar-brand{
 /* Start of footer Template */
 /* footer */
 
-.top-scroll-icon {
+/* .top-scroll-icon {
     bottom: 40px;
     left: 20px;
     position: fixed;
     opacity: 0.5;
 }
-
+ */
 footer {
     display: flex;
     margin: auto;
