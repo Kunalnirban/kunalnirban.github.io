@@ -166,6 +166,20 @@
             document.getElementById("message").value = "";
         }
     </script>
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "73d84403-06ca-4257-9bf0-c383f249afb5",
+      safari_web_id: "web.onesignal.auto.087eca46-faed-450d-af5b-90e7f525c88c",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
 
 <body>
