@@ -1,5 +1,6 @@
 * {
-    font-family: "Poppins",sans-serif
+    font-family: "Poppins",sans-serif;
+    color: black
 }
 
 a {
@@ -103,6 +104,7 @@ nav {
 
 .menu-items-desktop ul li a {
     text-decoration: none
+    color: black !important;
 }
 
 .menu-items-desktop ul li a:hover {
@@ -110,9 +112,6 @@ nav {
     text-underline-offset: .3rem
 }
 
-.menu-items-desktop a {
-    color: #fff
-}
 
 .menu-items-desktop>ul .active a {
     color: #beb7b7
