@@ -21,20 +21,6 @@ html {
     --text-light: #ffffff
 }
 
-body {
-    color: var(--text-dark);
-    background-color: var(--bs-dark);
-    transition: .5s
-}
-
-body.light-mode {
-    color: var(--text-dark);
-    background-color: var(--bs-light)
-}
-
-body.dark-mode {
-    color: var(--text-light)
-}
 
 header {
     display: block;
