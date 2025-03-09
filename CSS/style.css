@@ -320,7 +320,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-    color: #000
+    color: black
 }
 
 .tutorials-card .card {
@@ -355,7 +355,7 @@ nav .navbar-brand {
 }
 
 #navbar-example2 a {
-    color: #fff;
+    color: black;
     font-weight: 700
 }
 
