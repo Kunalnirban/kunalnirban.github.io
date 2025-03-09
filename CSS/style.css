@@ -15,14 +15,6 @@ html {
     display: none
 }
 
-:root {
-    --bs-dark: #212529;
-    --bs-light: #ffffff;
-    --text-dark: #000000;
-    --text-light: #ffffff
-}
-
-
 header {
     display: block;
     position: sticky;
